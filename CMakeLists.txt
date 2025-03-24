@@ -14,4 +14,5 @@ add_library(project_warnings INTERFACE)
 add_subdirectory(3rdParty)
 
 add_subdirectory(hw2)
+add_subdirectory(hw4)
 

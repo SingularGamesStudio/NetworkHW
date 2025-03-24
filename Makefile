@@ -16,3 +16,11 @@ run-game2:
 .PHONY: run-client2
 run-client2:
 	./build/hw2/hw2_client
+
+.PHONY: run-server4
+run-server4:
+	./build/hw4/w4_server
+
+.PHONY: run-client4
+run-client4:
+	./build/hw4/w4
