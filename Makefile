@@ -24,3 +24,11 @@ run-server4:
 .PHONY: run-client4
 run-client4:
 	./build/hw4/w4
+
+.PHONY: run-server5
+run-server5:
+	./build/hw5/w5_server
+
+.PHONY: run-client5
+run-client5:
+	./build/hw5/w5

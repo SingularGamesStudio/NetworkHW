@@ -16,11 +16,11 @@ enum MessageType : uint8_t {
 
 class BitStream {
     std::stringstream buffer;
-    uint32_t flag
-    BitStream()
+    uint32_t flag;
+    BitStream() {}
 
-        template <typename T>
-        bool write(const T &val) {
+    template <typename T>
+    bool write(const T &val) {
         buffer << val;
     }
     template <typename T>
@@ -28,8 +28,8 @@ class BitStream {
         buffer >> val;
     }
     void send() {
-        buffer.str()
-            ENetPacket *packet = enet_packet_create(nullptr, sizeof(uint8_t) + sizeof(Entity), ENET_PACKET_FLAG_RELIABLE);
+        buffer.str();
+        ENetPacket *packet = enet_packet_create(nullptr, sizeof(uint8_t) + sizeof(Entity), ENET_PACKET_FLAG_RELIABLE);
     }
 };
 
